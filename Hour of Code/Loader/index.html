@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Downloading Loader</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+      .con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+    } 
+
+    .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #0152a1; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 200px;
+        animation: spin 2s linear infinite;
+    }
+
+    p {
+      position: relative;
+      top: -150px;
+      color: #989898;
+      font-size: 2em;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="con">
+        <div class="loader"></div>
+        <p>Downloading...</p>
+    </div>
+  </body>
+</html>
