@@ -88,3 +88,27 @@ img {
 .text-container > span:nth-child(11) {
 	animation-delay: 5s;
 }
+
+@media screen and (max-width:767px) {
+  img {
+    width: 200px;
+  }
+  .welcome p {
+    font-size: 3rem;
+  }
+
+  .text-container {
+    position: absolute;
+    top: 80px;
+  }
+
+  span {
+    font-size: 30px;
+    top: 0;
+  }
+
+  .sp {
+    display: inline-block;
+  }
+
+}
